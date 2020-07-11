@@ -1,5 +1,7 @@
 #pragma once
 
+#include <iostream>
+
 //Include SFML Libraries
 #include <SFML/Graphics.hpp>
 #include <SFML/System.hpp>
@@ -22,9 +24,14 @@ private:
 	sf::VideoMode videoMode;
 	sf::Event ev;
 
+	//Game Objects
+	sf::RectangleShape enemy;
+
+
 	//Private Functions
 	void initVariables();
 	void initWindow();
+	void initEnemies();
 
 public:
 	//Constructors and Destructors
